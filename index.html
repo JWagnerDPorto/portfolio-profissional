@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilo -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    
-    <title>Portfófio - Wagner Porto </title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Título -->
+    <title>Portfólio - Wagner Porto</title>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -27,30 +25,29 @@
             <nav class="header__nav" aria-label="Menu principal">
                 <ul class="header__menu">
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Sobre mim</a>
+                        <a href="#sobre" class="header__menu-link">Sobre mim</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Skills</a>
+                        <a href="#skills" class="header__menu-link">Skills</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Hobbies</a>
+                        <a href="#hobbies" class="header__menu-link">Hobbies</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Formações</a>
+                        <a href="#formacao" class="header__menu-link">Formações</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Projetos</a>
+                        <a href="#projetos" class="header__menu-link">Projetos</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Contato</a>
+                        <a href="#contato" class="header__menu-link">Contato</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">jwagnerdporto@gmail.com</a>
+                        <a href="mailto:jwagnerdporto@gmail.com" class="header__menu-link header__menu-link--email">jwagnerdporto@gmail.com</a>
                     </li>
                 </ul>
             </nav>
         </div>
-
     </header>
 
     <!-- Conteúdo Principal -->
@@ -58,44 +55,137 @@
 
         <!-- Sessão de Apresentação -->
         <section class="introduction">
-
+            <div class="introduction__container">
+                <div class="introduction__content">
+                    <h1 class="introduction__title">Olá, meu nome é Wagner Porto e construo páginas web</h1>
+                    <p class="introduction__description">Eu sou formado em Lorem ipsum sit amet consectetur e atualmente estou participando de projetos.</p>
+                    <div class="introduction__social-links">
+                        <a href="#" class="introduction__social-link" aria-label="GitHub">GitHub</a>
+                        <a href="#" class="introduction__social-link" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="introduction__social-link" aria-label="Instagram">Instagram</a>
+                        <a href="#" class="introduction__social-link" aria-label="Currículo">Currículo</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="img/perfil.jpg" alt="Foto de Wagner Porto">
+                </div>
+            </div>
         </section>
 
-        <!-- Sessão Sobre Mim-->
+        <!-- Sessão Sobre Mim -->
         <section class="about">
-
+            <div class="about__container">
+                <h2 class="about__title">Sobre mim</h2>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim feugiat et, luctus.</p>
+                <img src="img/assinatura.png" alt="Assinatura Wagner Porto" class="about__signature">
+            </div>
         </section>
 
         <!-- Sessão de Habilidades -->
         <section class="skills">
-
+            <div class="skills__container">
+                <h2 class="skills__title">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item"><img src="img/html.png" alt="HTML5" class="skills__icon">HTML5</li>
+                    <li class="skills__item"><img src="img/javascript.png" alt="JavaScript" class="skills__icon">JavaScript</li>
+                    <li class="skills__item"><img src="img/php.png" alt="PHP" class="skills__icon">PHP</li>
+                    <li class="skills__item"><img src="img/node.png" alt="Node.js" class="skills__icon">Node.js</li>
+                    <li class="skills__item"><img src="img/react.png" alt="React" class="skills__icon">React</li>
+                    <li class="skills__item"><img src="img/css.png" alt="CSS" class="skills__icon">CSS</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Sessão de Hobbies -->
         <section class="hobbies">
-
+            <div class="hobbies__container">
+                <h2 class="hobbies__title">Hobbies</h2>
+                <ul class="hobbies__list">
+                    <li class="hobbies__item">Andar de skate</li>
+                    <li class="hobbies__item">Tocar baixo</li>
+                    <li class="hobbies__item">Ouvir música</li>
+                    <li class="hobbies__item">Assistir séries</li>
+                    <li class="hobbies__item">Cozinhar</li>
+                    <li class="hobbies__item">Tirar fotos</li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Sessão de Cursos -->
-        <section class="Courses">
-
+        <!-- Sessão de Formações -->
+        <section class="courses">
+            <div class="courses__container">
+                <h2 class="courses__title">Formação Acadêmica</h2>
+                <div class="courses__grid">
+                    <div class="courses__item">
+                        <img src="img/ufpr.png" alt="UFPR" class="courses__image">
+                        <p class="courses__text">Análise de dados<br>2018 - UFPR</p>
+                    </div>
+                    <div class="courses__item">
+                        <img src="img/alura.png" alt="Alura" class="courses__image">
+                        <p class="courses__text">Formação UX Design<br>2019 - Alura</p>
+                    </div>
+                    <div class="courses__item">
+                        <img src="img/ufrj.png" alt="UFRJ" class="courses__image">
+                        <p class="courses__text">Pós-graduação em design<br>Em andamento - UFRJ</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Projetos -->
         <section class="projects">
-
+            <div class="projects__container">
+                <h2 class="projects__title">Projetos</h2>
+                <div class="projects__grid">
+                    <div class="projects__item">
+                        <img src="img/projeto1.png" alt="Decodificador de Texto" class="projects__image">
+                        <p class="projects__description">Decodificador de Texto<br>Challenge Alura Codificador</p>
+                        <a href="#" class="projects__link">Repositório</a>
+                        <a href="#" class="projects__link">Ver demo</a>
+                    </div>
+                    <div class="projects__item">
+                        <img src="img/projeto2.png" alt="Jogo A Forca" class="projects__image">
+                        <p class="projects__description">Jogo criado com HTML, CSS e JavaScript<br>Challenge Oracle</p>
+                        <a href="#" class="projects__link">Repositório</a>
+                        <a href="#" class="projects__link">Ver demo</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Contato -->
         <section class="contact">
+            <div class="contact__container">
+                <h2 class="contact__title">Contato</h2>
+                <form action="#" class="contact__form" aria-label="Formulário de contato">
+                    <label for="name" class="contact__label">Nome</label>
+                    <input type="text" id="name" name="name" class="contact__input" required>
 
+                    <label for="email" class="contact__label">E-mail</label>
+                    <input type="email" id="email" name="email" class="contact__input" required>
+
+                    <label for="subject" class="contact__label">Assunto</label>
+                    <input type="text" id="subject" name="subject" class="contact__input" required>
+
+                    <label for="message" class="contact__label">Mensagem</label>
+                    <textarea id="message" name="message" class="contact__textarea" required></textarea>
+
+                    <button type="submit" class="contact__button">Enviar</button>
+                </form>
+            </div>
         </section>
-
+        
     </main>
-    <!-- Roda pé -->
-    <footer class="footer">
 
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">&copy; 2024 Wagner Porto. Todos os direitos reservados.</p>
+        </div>
     </footer>
-    
+
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
 </body>
 </html>
+
