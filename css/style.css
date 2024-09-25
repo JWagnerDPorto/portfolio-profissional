@@ -1,0 +1,67 @@
+:root {
+    /* Cores principais */
+    --cor-primaria: #b81515; /* Vermelho */
+    --cor-secundaria: #222; /* Grafite */
+    
+    /* Cores de fundo e texto */
+    --cor-fundo-claro: #f5f5f5; /* Neutro Claro */
+    --cor-fundo-escuro: #8c8c8c; /* Cinza Escuro */
+    --cor-texto: #222; /* Grafite */
+    --cor-texto-claro: #fff; /* Branco */
+    
+    /* Cores de fundo */
+    --cor-fundo: #000; /* Preto */
+    
+    /* Fonte */
+    --fonte-principal: Montserrat, Arial, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--fonte-principal);
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--cor-texto);
+    line-height: 1.6; /* Adiciona uma linha de altura mais legível */  
+}
+
+
+
+
+
+
+/*Cabeçalho*/
+.header {
+    padding: 1rem 2rem;
+    
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__nav {
+
+}
+
+.header__menu {
+    display: flex;
+    justify-content:space-around;
+    gap: 1rem;
+}
+
+.header__menu-item {
+
+}
+
+.header__menu-link {
+    
+}
