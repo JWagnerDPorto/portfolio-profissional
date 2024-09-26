@@ -19,21 +19,21 @@
 
 body {
     margin: 0;
+    padding: 0 10rem;
     font-family: var(--fonte-principal);
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 1rem;
     color: var(--cor-texto);
-    line-height: 1.6; /* Adiciona uma linha de altura mais legível */  
+    line-height: 1;  
 }
-
-
 
 
 
 
 /*Cabeçalho*/
 .header {
-    padding: 1rem 2rem;
+    padding: 2rem 0 ;
     
 }
 
@@ -53,12 +53,64 @@ body {
 .header__menu {
     display: flex;
     justify-content:space-around;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .header__menu-link--email {
     font-weight: bold;
 }
+
+/* Sessão de Apresentação */
+.introduction {
+    padding: 2rem 0;
+}
+
+.introduction__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.introduction__content {
+    width: 65%;
+}
+
+.introduction__title {
+    font-weight: bold;
+    font-size: 3.25rem;
+}
+
+.introduction__description {
+    font-weight: 400;
+    font-size: 1.375rem;
+    padding: 1.5rem 0;
+}
+
+.introduction__image {
+    width: 30%;
+}
+
+.introduction__image img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.introduction__social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.introduction__social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+
 
 
 
