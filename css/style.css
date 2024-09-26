@@ -108,6 +108,11 @@ body {
     gap: 0.5rem;
 }
 
+.introduction__social-link img {
+    width: 2rem;                  
+    height: 2rem;                 
+  }
+
 
 
 
