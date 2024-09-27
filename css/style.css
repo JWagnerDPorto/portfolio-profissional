@@ -1,10 +1,10 @@
 :root {
     /* Cores principais */
     --cor-primaria: #b81515; /* Vermelho */
-    --cor-secundaria: #222; /* Grafite */
+    --cor-secundaria:#EAF2FD; /* Grafite */
     
     /* Cores de fundo e texto */
-    --cor-fundo-claro: #ffffff; /* Neutro Claro */
+    --cor-fundo-claro: #f4f4f4; /* Neutro Claro */
     --cor-fundo-escuro: #EAF2FD; /* Cinza Escuro */
     --cor-texto: #464646; /* Grafite */
     --cor-texto-claro: #fff; /* Branco */
@@ -15,6 +15,7 @@
 
 
 body {
+    background-color: var(--cor-fundo-claro);
     margin: 0;
     font-family: var(--fonte-principal);
     font-optical-sizing: auto;
@@ -85,7 +86,7 @@ body {
 }
 
 .introduction__title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 3.25rem;
 }
 
@@ -140,6 +141,58 @@ body {
     font-size: 2rem;
     font-weight: 700;
 }
+
+/* Sessão de Habilidades */
+.skills {
+    padding: 2rem 10rem 0 10rem;
+}
+
+.skills__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills__item {
+    height: 11rem;
+    width: 11rem;
+    background-color: var(--cor-texto-claro)
+}
+
+/* Sessão de Hobbies */
+.hobbies {
+    padding: 5.5rem 10rem;
+}
+
+.hobbies__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.hobbies__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hobbies__item {
+    height: 11rem;
+    width: 11rem;
+    background-color: var(--cor-texto-claro)
+}
+
+
 
 
 
