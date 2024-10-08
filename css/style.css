@@ -1,13 +1,14 @@
 :root {
     /* Cores principais */
-    --cor-primaria: #b81515; /* Vermelho */
-    --cor-secundaria:#EAF2FD; /* Grafite */
+    --cor-primaria: #f4f4f4;
+    --cor-secundaria:#EAF2FD;
     
     /* Cores de fundo e texto */
-    --cor-fundo-claro: #f4f4f4; /* Neutro Claro */
-    --cor-fundo-escuro: #EAF2FD; /* Cinza Escuro */
-    --cor-texto: #464646; /* Grafite */
-    --cor-texto-claro: #fff; /* Branco */
+    --cor-fundo-claro: #ffff;
+    --cor-fundo-escuro: #EAF2FD;
+
+    --cor-texto: #464646;
+    --cor-texto-claro: #fff;
     
     /* Fonte */
     --fonte-principal: "Raleway", sans-serif;
@@ -15,7 +16,7 @@
 
 
 body {
-    background-color: var(--cor-fundo-claro);
+    background-color: var(--cor-primaria);
     margin: 0;
     font-family: var(--fonte-principal);
     font-optical-sizing: auto;
@@ -38,7 +39,7 @@ body {
     padding: 0 10rem;
     width: auto;
     z-index: 1000;
-    background-color: var(--cor-fundo-claro);
+    background-color: var(--cor-primaria);
 }
 
 .header__container{
@@ -144,17 +145,18 @@ body {
 
 /* Sessão de Habilidades */
 .skills {
-    padding: 2rem 10rem 0 10rem;
+    padding: 2rem 10rem;
+    text-align: center;
 }
 
 .skills__title {
     font-size: 2rem;
     font-weight: 700;
-    text-align: center;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .skills__list {
+    list-style: none;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -162,24 +164,46 @@ body {
 }
 
 .skills__item {
-    height: 11rem;
-    width: 11rem;
-    background-color: var(--cor-texto-claro)
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    height: 9rem;
+    width: 7rem;
+    background-color: var(--cor-fundo-claro);
+    transition: transform 0.3s ease;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.skills__item:hover {
+    transform: scale(1.05);
+  }
+
+.skills__icon {
+    width: 2rem;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 /* Sessão de Hobbies */
 .hobbies {
-    padding: 5.5rem 10rem;
+    padding: 2rem 10rem; 
+    text-align: center;
 }
 
 .hobbies__title {
     font-size: 2rem;
     font-weight: 700;
-    text-align: center;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem; 
 }
 
 .hobbies__list {
+    list-style: none; 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -187,10 +211,320 @@ body {
 }
 
 .hobbies__item {
-    height: 11rem;
-    width: 11rem;
-    background-color: var(--cor-texto-claro)
+    flex-grow: 1;
+    display: flex;
+    justify-content: end; 
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 0.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    height: 9rem; 
+    width: 7rem; 
+    background-color: var(--cor-fundo-claro);
+    transition: transform 0.3s ease;
+    position: relative;
+    padding-left: 1rem;
 }
+
+.hobbies__item:hover {
+    transform: scale(1.05); 
+}
+
+.hobbies__icon {
+    width: 2rem; 
+    height: auto;
+    margin-bottom: 1rem; 
+}
+
+/* Sessão de Formação Acadêmica */
+.courses {
+    background-color: var(--cor-secundaria);
+    padding: 2rem 10rem;
+    text-align: center;
+}
+
+.courses__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.courses__container {
+    margin: 0 auto;
+}
+
+.courses__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+.courses__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 16rem;
+    flex-grow: 1;
+    gap: 0.5rem;
+}
+
+.courses__item h3 {
+    font-weight: 700;
+}
+
+.courses__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-claro) ;
+    height: 16rem;
+    width: 100%;
+}
+
+.courses__image {
+    width: 10rem;
+    height: auto;
+}
+
+.courses__text {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* Sessão de Projetos */
+.projects {
+    background-color: var(--cor-fundo-claro); /* Fundo claro */
+    padding: 3rem 10rem;
+    text-align: center;
+}
+
+.projects__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.projects__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.projects__item {
+    background-color: var(--cor-fundo-claro);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 45%; /* Controle da largura */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.projects__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.projects__description {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.projects__link {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.projects__link:hover {
+    background-color: #004999;
+}
+
+/* Sessão de Projetos */
+.projects {
+    background-color: #f7f7f7; /* Fundo claro */
+    padding: 3rem 10rem;
+    text-align: center;
+}
+
+.projects__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.projects__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Espaço entre os itens */
+    flex-wrap: wrap;
+}
+
+.projects__item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 45%; /* Controle da largura */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.projects__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.projects__description {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.projects__link {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.projects__link:hover {
+    background-color: #004999;
+}
+
+/* Sessão de Contato */
+.contact {
+    background-color: #f0f0f0; /* Fundo claro */
+    padding: 4rem 10rem;
+    text-align: center;
+}
+
+.contact__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.contact__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: left;
+    color: #333;
+}
+
+.contact__input,
+.contact__textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+}
+
+.contact__textarea {
+    height: 150px;
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+
+.contact__button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__button:hover {
+    background-color: #004999;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer__text {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
