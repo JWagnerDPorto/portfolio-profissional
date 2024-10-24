@@ -1,22 +1,22 @@
 :root {
     /* Cores principais */
-    --cor-primaria: #f4f4f4;
-    --cor-secundaria:#EAF2FD;
+    --cor-primaria: #8750F7;
+    --cor-secundaria:#2A1454;
     
     /* Cores de fundo e texto */
-    --cor-fundo-claro: #ffff;
-    --cor-fundo-escuro: #EAF2FD;
+    --cor-fundo-claro: #FFFFFF;
+    --cor-fundo-escuro: #f6f3fc;
 
-    --cor-texto: #464646;
-    --cor-texto-claro: #fff;
+    --cor-texto: #2A1454;
+    --cor-texto-claro: #FFFFFF;
     
     /* Fonte */
-    --fonte-principal: "Raleway", sans-serif;
+    --fonte-principal: "Sora", sans-serif;
 }
 
 
 body {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-fundo-claro);
     margin: 0;
     font-family: var(--fonte-principal);
     font-optical-sizing: auto;
@@ -27,7 +27,14 @@ body {
     padding-top: 6rem;
 }
 
-
+.introduction__title, .about__title,
+.hard-skills__title, .soft-skills__title,
+.courses__title, .projects__title, .contact__title{
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-secundaria));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
 
 /*Cabeçalho*/
@@ -36,16 +43,17 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 10rem;
+    padding: 0 7rem;
+    height: 10vh;
     width: auto;
     z-index: 1000;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-fundo-claro);
 }
 
 .header__container{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0 ;
+    padding: 1rem 0 ;
     margin: 0 auto;
 }
 
@@ -56,6 +64,13 @@ body {
     gap: 0.5rem;
     font-weight: 700;
 }
+
+.bx-coffee{
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+    padding-bottom: 0.75rem;
+  }
+  
 
 .header__menu {
     display: flex;
@@ -72,38 +87,61 @@ body {
 
 /* Sessão de Apresentação */
 .introduction {
-    padding: 0 10rem 2rem 10rem;
+    padding: 0 7rem 2rem 7rem;
+    height: 90vh;
 }
 
 .introduction__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+    height: 100%;
     width: auto;
 }
 
 .introduction__content {
-    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 60%;
+    gap: 1.5rem;
+}
+
+.introduction__text {
+font-weight: 700;
+font-size: 2rem;
 }
 
 .introduction__title {
     font-weight: 700;
-    font-size: 3.25rem;
+    font-size: 4.5rem;
 }
 
 .introduction__description {
-    font-weight: 400;
-    font-size: 1.375rem;
+    font-weight:300;
+    font-size: 1.25rem;
     padding: 1.5rem 0;
+    word-spacing: 0.5rem;
+    text-align: justify;
+    line-height: 2rem;
 }
 
 .introduction__image {
-    width: 30%;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 35%;
+    background-color: var(--cor-primaria);
+    border-radius: 5%;
+    
 }
 
 .introduction__image img {
-    border-radius: 50%;
+    border-radius: 5%;
+    border: 2px solid var(--cor-primaria);
     width: 100%;
+    transform: rotate(5deg);
 }
 
 .introduction__social-links {
@@ -116,17 +154,24 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    border: 2px solid var(--cor-primaria);
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--cor-primaria);
 }
 
-.introduction__social-link img {
-    width: 2rem;                  
-    height: 2rem;                 
-  }
+.bxs-download, .bxl-github,
+.bxl-linkedin-square,.bxl-instagram-alt {
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+}
+
 
   /* Sessão Sobre Mim */
 .about {
     background-color: var(--cor-fundo-escuro);
-    padding: 0 10rem 2rem 10rem;
+    padding: 0 7rem 2rem 7rem;
+    height: 90vh;
     
 }
 
@@ -134,7 +179,7 @@ body {
     display:flex ;
     flex-direction: column;
     padding: 4rem 0 2rem 0;
-    width: 65%;
+    width: 100%;
     gap: 1rem;
 }
 
@@ -143,98 +188,67 @@ body {
     font-weight: 700;
 }
 
-/* Sessão de Habilidades */
-.skills {
-    padding: 2rem 10rem;
-    text-align: center;
+.about__text {
+    font-weight:300;
+    font-size: 1.25rem;
+    padding: 1.5rem 0;
+    word-spacing: 0.5rem;
+    text-align: justify;
+    line-height: 2rem;
 }
 
-.skills__title {
+/* Sessão de Habilidades */
+.hard-skills, .soft-skills {
+    padding: 2rem 10rem;
+    text-align: center;
+    height: 90vh;
+}
+
+.hard-skills__title, .soft-skills__title {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
-.skills__list {
+.hard-skills__list, .soft-skills__list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.skills__item {
-    flex-grow: 1;
+.hard-skills__item, .soft-skills__item {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.5rem;
     font-weight: 700;
     padding: 1rem;
-    height: 9rem;
-    width: 7rem;
-    background-color: var(--cor-fundo-claro);
+    height: 10rem;
+    width: 9rem;
+    border-radius: 10%;
     transition: transform 0.3s ease;
     position: relative;
     padding-left: 1rem;
 }
 
-.skills__item:hover {
+.hard-skills__item:hover, .soft-skills__item:hover {
     transform: scale(1.05);
-  }
+}
 
-.skills__icon {
-    width: 2rem;
+.hard-skills__icon, .soft-skills__icon {
+    width: 4rem;
     height: auto;
     margin-bottom: 1rem;
 }
 
-/* Sessão de Hobbies */
-.hobbies {
-    padding: 2rem 10rem; 
-    text-align: center;
+.hard-skills__item {
+    background-color: var(--cor-fundo-escuro);
 }
-
-.hobbies__title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem; 
-}
-
-.hobbies__list {
-    list-style: none; 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.hobbies__item {
-    flex-grow: 1;
-    display: flex;
-    justify-content: end; 
-    flex-direction: column;
-    align-items: flex-start; 
-    gap: 0.5rem;
-    font-weight: 700;
-    padding: 1rem;
-    height: 9rem; 
-    width: 7rem; 
+.soft-skills__item {
     background-color: var(--cor-fundo-claro);
-    transition: transform 0.3s ease;
-    position: relative;
-    padding-left: 1rem;
-}
-
-.hobbies__item:hover {
-    transform: scale(1.05); 
-}
-
-.hobbies__icon {
-    width: 2rem; 
-    height: auto;
-    margin-bottom: 1rem; 
 }
 
 /* Sessão de Formação Acadêmica */

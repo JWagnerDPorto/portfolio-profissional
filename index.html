@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Fonte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Título -->
     <title>Portfólio - Wagner Porto</title>
   </head>
@@ -22,8 +21,8 @@
     <header class="header">
       <div class="header__container">
         <div class="header__logo">
-          <img src="img/menu/logo.png" alt="Logo Wagner Porto" />
-          <h1>Wagner Porto</h1>
+          <i class='bx bx-coffee'></i>
+          <h2>Wagner Porto</h2>
         </div>
         <nav class="header__nav" aria-label="Menu principal">
           <ul class="header__menu">
@@ -34,22 +33,18 @@
               <a href="#skills" class="header__menu-link">Skills</a>
             </li>
             <li class="header__menu-item">
-              <a href="#hobbies" class="header__menu-link">Hobbies</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#formacao" class="header__menu-link">Formações</a>
-            </li>
-            <li class="header__menu-item">
               <a href="#projetos" class="header__menu-link">Projetos</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#formacoes" class="header__menu-link">Formações</a>
             </li>
             <li class="header__menu-item">
               <a href="#contato" class="header__menu-link">Contato</a>
             </li>
             <li class="header__menu-item">
-              <a
-                href="mailto:jwagnerdporto@gmail.com"
-                class="header__menu-link header__menu-link--email"
-                >jwagnerdporto@gmail.com</a
+              <a href="mailto:jwagnerdporto@gmail.com" 
+              class="header__menu-link header__menu-link--email" 
+              >jwagnerdporto@gmail.com</a
               >
             </li>
           </ul>
@@ -63,55 +58,30 @@
       <section class="introduction">
         <div class="introduction__container">
           <div class="introduction__content">
+            <p class="introduction__text">Olá! Sou Wagner Porto</p>
             <h1 class="introduction__title">
-              Olá, meu nome é Wagner Porto e construo páginas web
+              Desenvolvedor Front-end
             </h1>
             <p class="introduction__description">
-              Eu sou formado em Lorem ipsum sit amet consectetur e atualmente
-              estou participando de projetos.
+              Meu foco está em transformar ideias criativas em experiências digitais fluidas e funcionais. Navegue pelo meu portfólio para ver os projetos que desenvolvi e como posso agregar valor ao seu próximo desafio.
             </p>
             <div class="introduction__social-links">
-              <a href="#" class="introduction__social-link" aria-label="GitHub"
-                >GitHub
-                <img
-                  src="img/Introduction/arrow_back_black_24dp 1.png"
-                  alt=""
-                />
+              <a href="#" class="introduction__social-link" aria-label="Currículo" >Baixar CV
+                <i class='bx bxs-download'></i>
               </a>
-              <a
-                href="#"
-                class="introduction__social-link"
-                aria-label="LinkedIn"
-                >LinkedIn
-                <img
-                  src="img/Introduction/arrow_back_black_24dp 1.png"
-                  alt=""
-                />
+              <a href="#" class="introduction__social-link" aria-label="GitHub">
+                <i class='bx bxl-github'></i>
               </a>
-              <a
-                href="#"
-                class="introduction__social-link"
-                aria-label="Instagram"
-                >Instagram
-                <img
-                  src="img/Introduction/arrow_back_black_24dp 1.png"
-                  alt=""
-                />
+              <a href="#" class="introduction__social-link" aria-label="LinkedIn">
+                <i class='bx bxl-linkedin-square' ></i>
               </a>
-              <a
-                href="#"
-                class="introduction__social-link"
-                aria-label="Currículo"
-                >Currículo
-                <img
-                  src="img/Introduction/arrow_back_black_24dp 1.png"
-                  alt=""
-                />
+              <a href="#" class="introduction__social-link" aria-label="Instagram" >
+                <i class='bx bxl-instagram-alt' ></i> 
               </a>
             </div>
           </div>
           <div class="introduction__image">
-            <img src="img/header/perfil.png" alt="Foto de Wagner Porto" />
+            <img src="img/perfil.png" alt="Foto de Wagner Porto" />
           </div>
         </div>
       </section>
@@ -119,128 +89,84 @@
       <!-- Sessão Sobre Mim -->
       <section class="about" aria-labelledby="about-title">
         <div class="about__container">
-          <h2 class="about__title" id="about-title">Sobre mim</h2>
+          <h2 class="about__title">Sobre mim</h2>
           <p class="about__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque velit velit, volutpat semper dignissim dictum,
-            imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse
-            potenti. Ut semper sagittis ligula et lacinia.
-            <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque velit velit, volutpat semper dignissim dictum,
-            imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse
-            potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis
-            venenatis, egestas metus vitae, aliquet metus.
+            Sou desenvolvedor front-end cursando o 5º semestre de Engenharia de Software, com sólido entendimento em lógica de programação e controle de versão (Git e GitHub). Ao longo da minha jornada acadêmica e pessoal, desenvolvi habilidades em tecnologias como HTML, CSS (incluindo BEM), JavaScript, e frameworks como React.
+            <br>
+            Tenho experiência em projetos pessoais que me permitiram aplicar na prática esses conhecimentos, como a criação de um portfólio, desenvolvimento de aplicativos web e ferramentas interativas. Estou sempre atualizando minhas habilidades para acompanhar as tendências e evoluções do mercado, com foco em entregar soluções eficientes e de qualidade.
+            <br>
+            Estou em busca de oportunidades de estágio ou posições júnior, onde possa contribuir com minhas habilidades técnicas e meu entusiasmo, ao mesmo tempo em que continuo me desenvolvendo profissionalmente.
           </p>
-          <figure class="about__signature-container">
-            <img
-              src="img/about/assinatura.png"
-              alt="Assinatura de Wagner Porto, desenvolvedor front end"
-              class="about__signature"
-            />
-          </figure>
         </div>
       </section>
 
       <!-- Sessão de Habilidades -->
-      <section class="skills">
-        <div class="skills__container">
-          <h2 class="skills__title">Skills</h2>
-          <ul class="skills__list">
-            <li class="skills__item">
-              <img
-                src="img/skills/html.png"
-                alt="HTML5"
-                class="skills__icon"
+      <!-- Hard Skills --> 
+      <section class="hard-skills">
+        <div class="hard-skills__container">
+          <h2 class="hard-skills__title">Hard Skills</h2>
+          <ul class="hard-skills__list">
+            <li class="hard-skills__item">
+              <img src="img/html.png" alt="HTML5" class="hard-skills__icon"
               />HTML5
             </li>
-            <li class="skills__item">
-              <img
-                src="img/skills/js.png"
-                alt="JavaScript"
-                class="skills__icon"
+            <li class="hard-skills__item">
+              <img src="img/css.png" alt="PHP" class="hard-skills__icon" 
+              />CSS
+            </li>
+            <li class="hard-skills__item">
+              <img src="img/javascript.png" alt="JavaScript" class="hard-skills__icon"
               />JavaScript
             </li>
-            <li class="skills__item">
-              <img src="img/skills/php.png" alt="PHP" class="skills__icon" />PHP
-            </li>
-            <li class="skills__item">
-              <img
-                src="img/skills/node.png"
-                alt="Node.js"
-                class="skills__icon"
-              />Node.js
-            </li>
-            <li class="skills__item">
-              <img
-                src="img/skills/react.png"
-                alt="React"
-                class="skills__icon"
+            <li class="hard-skills__item">
+              <img src="img/react.png" alt="React" class="hard-skills__icon"
               />React
             </li>
-            <li class="skills__item">
-              <img src="img/skills/css.png" alt="CSS" class="skills__icon" />CSS
+            <li class="hard-skills__item">
+              <img src="img/nodejs.png" alt="Node.js" class="hard-skills__icon"
+              />Node.js
+            </li>
+            <li class="hard-skills__item">
+              <img src="img/figma.png" alt="CSS" class="hard-skills__icon" />Figma
+            </li>
+            <li class="hard-skills__item">
+              <img src="img/wp.png" alt="CSS" class="hard-skills__icon" />WordPress
+            </li>
+            <li class="hard-skills__item">
+              <img src="img/bootstrap.png" alt="CSS" class="hard-skills__icon" />Bootstrap
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Sessão de Hobbies -->
-      <section class="hobbies">
-        <div class="hobbies__container">
-          <h2 class="hobbies__title">Hobbies</h2>
-          <ul class="hobbies__list">
-            <li class="hobbies__item">
-              <img
-                src="img/hobbies/skateboarding_black_24dp (1) 1.png"
-                alt="Andar de skate"
-                class="hobbies__icon"
-              />
-              Andar de skate
+
+      <!-- Soft Skills --> 
+      <section class="soft-skills">
+        <div class="soft-skills__container">
+          <h2 class="soft-skills__title">Soft Skills</h2>
+          <ul class="soft-skills__list">
+            <li class="soft-skills__item">
+              Comunicação eficaz
             </li>
-            <li class="hobbies__item">
-              <img
-                src="img/hobbies/guitar.png"
-                alt="Tocar baixo"
-                class="hobbies__icon"
-              />
-              Tocar baixo
+            <li class="soft-skills__item">
+              Resolução de problemas
             </li>
-            <li class="hobbies__item">
-              <img
-                src="img/hobbies/headphones_black_24dp 1.png"
-                alt="Ouvir música"
-                class="hobbies__icon"
-              />
-              Ouvir música
+            <li class="soft-skills__item">
+              Trabalho em equipe
             </li>
-            <li class="hobbies__item">
-              <img
-                src="img/hobbies/tv_black_24dp 1.png"
-                alt="Assistir séries"
-                class="hobbies__icon"
-              />
-              Assistir séries
+            <li class="soft-skills__item">
+              Gestão de tempo
             </li>
-            <li class="hobbies__item">
-              <img
-                src="img/hobbies/restaurant_menu_black_24dp 1.png"
-                alt="Cozinhar"
-                class="hobbies__icon"
-              />
-              Cozinhar
+            <li class="soft-skills__item">
+              Adaptabilidade
             </li>
-            <li class="hobbies__item">
-              <img
-                src="img/hobbies/photo_camera_black_24dp 1.png"
-                alt="Tirar fotos"
-                class="hobbies__icon"
-              />
-              Tirar fotos
+            <li class="soft-skills__item">
+              Pensamento crítico
             </li>
           </ul>
         </div>
       </section>
+
 
       <!-- Sessão de Formações -->
 <section class="courses">
